@@ -16,6 +16,10 @@ pytorch code. To install from [pypi][pypi-url]:
 ```
 pip install smalldiffusion
 ```
+### Yada modifications
+Added more args to the fashion_mnist_dit.py. You can get a minimal version working by unzipping 
+https://drive.google.com/drive/u/0/folders/174aXcixGpQYpmmgD4A5wjYRVtUSillWv, modifying that file to point the img data to this, and running
+'accleerate launch examples/fashion_mnist_dit.py'
 
 ### Toy models
 To train and sample from the `Swissroll` toy dataset in 10 lines of code (see

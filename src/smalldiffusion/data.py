@@ -1,7 +1,17 @@
+from PIL import Image
 import torch
 import csv
 from torch.utils.data import Dataset
 from torchvision import transforms as tf
+
+class GrayscaleImageFolder(ImageFolder):
+    def __getitem__(self, index):
+        path, target = self.samples[index]
+        # Force grayscale load
+        sample = Image.open(path).convert("L")
+        if self.transform is not None:
+            sample = self.transform(sample)
+        return sample, target
 
 class Swissroll(Dataset):
     def __init__(self, tmin, tmax, N, center=(0,0), scale=1.0):

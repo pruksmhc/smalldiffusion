@@ -4,7 +4,7 @@ from .diffusion import (
 )
 
 from .data import (
-    Swissroll, DatasaurusDozen, MappedDataset, img_train_transform, img_normalize
+    Swissroll, DatasaurusDozen, MappedDataset, img_train_transform, img_normalize, GrayscaleImageFolder
 )
 
 from .model import (
