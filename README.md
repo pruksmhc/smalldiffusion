@@ -16,7 +16,10 @@ pytorch code. To install from [pypi][pypi-url]:
 ```
 pip install smalldiffusion
 ```
-### Yada modifications
+### Yada's Hello World
+An annotated diffusiontransformer guide is here: 
+https://colab.research.google.com/drive/1fABpZRE7wg8WknAtMa0lDosgCoJt_ozn#scrollTo=kB8Gux5As_SS
+
 Added more args to the fashion_mnist_dit.py. You can get a minimal version working by unzipping 
 https://drive.google.com/drive/u/0/folders/174aXcixGpQYpmmgD4A5wjYRVtUSillWv, modifying that file to point the img data to this, and running
 'accleerate launch examples/fashion_mnist_dit.py'
